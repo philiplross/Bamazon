@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
   
     // Your password
     password: "DJcorgi02",
-    database: "bamazonDB"
+    database: "bamazondb"
   });
 
   connection.connect(function(err) {
@@ -20,14 +20,14 @@ var connection = mysql.createConnection({
     connection.end();
   });
 
-  function start() {
-    inquirer
-      .prompt({
-        name: "idNumber",
-        type: "rawlist",
-        message: "Whats the ID number of your item?",
-        choices: [1,2,3,4,5,6,7,8,9,10]
-      })
+  // function start() {
+  //   inquirer
+  //     .prompt({
+  //       name: "idNumber",
+  //       type: "rawlist",
+  //       message: "Whats the ID number of your item?",
+  //       choices: [1,2,3,4,5,6,7,8,9,10]
+  //     })
       
     //   .then(function(answer) {
     //     // based on their answer, either call the bid or the post functions
@@ -38,5 +38,5 @@ var connection = mysql.createConnection({
     //       bidAuction();
     //     }
     //   });
-  };
+  // };
 
