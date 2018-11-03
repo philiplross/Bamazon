@@ -20,14 +20,16 @@ var connection = mysql.createConnection({
     connection.end();
   });
 
-  // function start() {
-  //   inquirer
-  //     .prompt({
-  //       name: "idNumber",
-  //       type: "rawlist",
-  //       message: "Whats the ID number of your item?",
-  //       choices: [1,2,3,4,5,6,7,8,9,10]
-  //     })
+  function start() {
+
+
+   
+    inquirer
+      .prompt({
+       console.log("whats the ID of your product 1-10?", choices);
+        message: "message goes here?",
+        choices: [1,2,3,4,5,6,7,8,9,10]
+      })
       
     //   .then(function(answer) {
     //     // based on their answer, either call the bid or the post functions
@@ -38,5 +40,5 @@ var connection = mysql.createConnection({
     //       bidAuction();
     //     }
     //   });
-  // };
+  };
 
