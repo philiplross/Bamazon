@@ -32,7 +32,9 @@ var connection = mysql.createConnection({
         choices: [1,2]
       })
      
-  
+  // trying to get it to do a question but nnext is to put in the asners inquirer comands to list what products as well 
   };
   
+
+
 
