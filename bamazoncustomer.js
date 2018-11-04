@@ -26,19 +26,11 @@ var connection = mysql.createConnection({
    
     inquirer
       .prompt({
-       console.log("whats the ID of your product 1-10?", choices);
-        message: "message goes here?",
-        choices: [1,2,3,4,5,6,7,8,9,10]
+      //  console.log("whats the ID of your product 1-10?", choices);
+        message: "whats the ID of your product 1-10?",
+        choices: ["this is working"]
       })
       
-    //   .then(function(answer) {
-    //     // based on their answer, either call the bid or the post functions
-    //     if (answer.idNumber.toUpperCase() === "Id Number") {
-    //       postAuction();
-    //     }
-    //     else {
-    //       bidAuction();
-    //     }
-    //   });
+  
   };
 
