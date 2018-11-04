@@ -23,14 +23,16 @@ var connection = mysql.createConnection({
   function start() {
 
 
-   
+   console.log("is working");
     inquirer
       .prompt({
       //  console.log("whats the ID of your product 1-10?", choices);
-        message: "whats the ID of your product 1-10?",
-        choices: ["this is working"]
+      type: input,  
+      message: "whats the ID of your product 1-10?",
+        choices: [1,2]
       })
-      
+     
   
   };
+  
 
